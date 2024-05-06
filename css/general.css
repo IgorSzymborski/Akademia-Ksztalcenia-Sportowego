@@ -1,0 +1,68 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--- 02 WHITESPACE
+
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+--- 03 COLORS
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #101415;
+}
+
+.container {
+  padding: 2.4rem 9.6rem;
+}
+
+.h1 {
+  display: inline-block;
+  font-size: 5.2rem;
+  text-align: center;
+  color: #e5e5e5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-size: 3rem;
+  color: #e5e5e5;
+  text-transform: uppercase;
+  animation: moveInRight 1.2s ease 0s 1 normal forwards;
+  text-transform: uppercase;
+}
+
+.h3 {
+  font-size: 4rem;
+  color: #e5e5e5;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.h4 {
+  font-size: 2.6rem;
+  color: #e5e5e5;
+  /* text-transform: uppercase; */
+}

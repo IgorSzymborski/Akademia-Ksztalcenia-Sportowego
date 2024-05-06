@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/introSection.css" />
+    <link rel="stylesheet" href="css/aboutSection.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/coach-section.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/ba87c27212.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo-box">
+          <img
+            src="img/FULL_NAME_WHITE_NO_BG.png"
+            alt="Logo"
+            class="logo-img"
+          />
+        </div>
+
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list__item">
+              <a href="#" class="link">O nas</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="link">Grafik zajęć</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="#" class="link">Dokumenty</a>
+            </li>
+            <li class="navigation-list__item">
+              <a href="" class="link link-btn">Kontakt</a>
+            </li>
+          </ul>
+          <div class="social-box">
+            <a href="#" class="social-link"
+              ><i class="fa-brands fa-square-facebook facebook-logo"></i
+            ></a>
+            <a href="#" class="social-link instagram-logo"
+              ><i class="fa-brands fa-square-instagram instagram-logo"></i
+            ></a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section-intro">
+          <div class="text-wrapper">
+            <div class="h1-box">
+              <h1 class="h1">
+                Akademia Kształcenia Sportowego <br />
+                Twoje miejsce aktywności!
+              </h1>
+            </div>
+            <div class="text-box">
+              <p class="seciont-text">
+                Sukces to nie końcówka drogi, to ciągła podróż polegająca na
+                doskonaleniu.
+              </p>
+            </div>
+          </div>
+
+          <div class="partnersBox">
+            <h2 class="h2">Nasi Partnerzy</h2>
+            <ul class="partner-logo-list">
+              <li class="partner-logo-item">
+                <img
+                  src="img/Herb-legionowo2.png"
+                  alt=""
+                  class="partner-logo"
+                />
+                <p class="partner-text">
+                  Miasto <br />
+                  Legionowo
+                </p>
+              </li>
+              <li class="partner-logo-item">
+                <img src="img/logo-zwiazek2.png" alt="" class="partner-logo" />
+                <p class="partner-text">
+                  Polski Związek <br />
+                  Taekwondo Olimpijskiego
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="about">
+          <h3 class="h3">
+            Witamy w <span class="h3-span"> Akademii</span> Kształcenia
+            Sportowego!
+          </h3>
+          <div class="about-box">
+            <div class="background-box">
+              <img src="/img/SYGNET_NO_BG.png" alt="" class="background-img" />
+            </div>
+            <div class="about-text-box">
+              <p class="about-text">
+                Jesteśmy dynamicznym klubem taekwondo, który nie tylko doskonali
+                techniki walki, ale także kształtuje charakter i dyscyplinę
+                uczestników. Zajęcia prowadzone są przez doświadczonych
+                instruktorów, którzy kładą duży nacisk na rozwój fizyczny i
+                mentalny.
+              </p>
+
+              <p class="about-text">
+                Dzięki zindywidualizowanemu podejściu każdy członek klubu ma
+                możliwość osiągnięcia swoich celów, niezależnie od wieku czy
+                poziomu zaawansowania. W Akademii Kształcenia Sportowego
+                promujemy nie tylko umiejętności sportowe, ale także wartości
+                takie jak szacunek, determinacja i samodyscyplina.
+              </p>
+
+              <p class="about-text quote">
+                Każda z technik ma swój cel: trzeba wiedzieć czym, gdzie i jak.
+              </p>
+              <p class="about-text">태권도</p>
+            </div>
+          </div>
+          <div class="gallery-box">
+            <img src="img/IMG_1596.JPG" alt="" class="gallery-img" />
+            <img src="img/IMG_2099.JPG" alt="" class="gallery-img" />
+            <img src="img/IMG_1602.JPG" alt="" class="gallery-img" />
+            <img src="img/IMG_1961.JPG" alt="" class="gallery-img" />
+            <img src="img/IMG_1600.JPG" alt="" class="gallery-img" />
+            <img src="img/IMG_1962.JPG" alt="" class="gallery-img" />
+          </div>
+
+          <div class="timetable-box">
+            <button class="timetable-button">Grafik zajęć</button>
+          </div>
+          <div class="popup hidden">
+            <div class="popup-box">
+              <div class="timetable-img-box">
+                <img src="/img/garfik.png" alt="" class="timetable-img" />
+              </div>
+              <button class="timetable-button close">x</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="coach-section">
+          <!-- <h3 class="h3">Kadra trenerska</h3>
+          <div class="coach-section-box">
+            <h4 class="h4">Trener Karol</h4>
+            <div class="coach-details-box">
+              <div class="coach-img-box">
+                <img src="/img/Trener-Karol.jpg" alt="" class="coach-img" />
+              </div>
+              <div class="coach-text-box">
+                <p class="coach-text-details">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Atque ipsa assumenda consequuntur reiciendis porro aperiam
+                  sed, rem quia temporibus animi molestias voluptatem fuga
+                  debitis corrupti quos impedit sequi aspernatur quam.Lorem
+                  ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa
+                  assumenda consequuntur reiciendis porro aperiam sed, rem quia
+                  temporibus animi molestias voluptatem fuga debitis corrupti
+                  quos impedit sequi aspernatur quam.
+                </p>
+                <ul class="coach-list">
+                  <li class="coach-list-item">
+                    Złoty medal mistrzostw Europy 2014
+                  </li>
+                  <li class="coach-list-item">
+                    Złoty medal mistrzostw Europy 2014
+                  </li>
+                  <li class="coach-list-item">
+                    Złoty medal mistrzostw Europy 2014
+                  </li>
+                  <li class="coach-list-item">
+                    Złoty medal mistrzostw Europy 2014
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="coach-section-box">
+            <h4 class="h4">Trener Karol</h4>
+            <div class="coach-details-box">
+              <div class="coach-img-box">
+                <img src="/img/Trener-Karol.jpg" alt="" class="coach-img" />
+              </div>
+              <div class="coach-text-box">
+                <p class="coach-text-details">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Atque ipsa assumenda consequuntur reiciendis porro aperiam
+                  sed, rem quia temporibus animi molestias voluptatem fuga
+                  debitis corrupti quos impedit sequi aspernatur quam. Lorem
+                  ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa
+                  assumenda consequuntur reiciendis porro aperiam sed, rem quia
+                  temporibus animi molestias voluptatem fuga debitis corrupti
+                  quos impedit sequi aspernatur quam. Lorem ipsum dolor, sit
+                  amet consectetur adipisicing elit. Atque ipsa assumenda
+                  consequuntur reiciendis porro aperiam sed, rem quia temporibus
+                  animi molestias voluptatem fuga debitis corrupti quos impedit
+                  sequi aspernatur quam.
+                </p>
+                <ul class="coach-list">
+                  <li class="coach-list-item">
+                    Złoty medal mistrzostw Europy 2014
+                  </li>
+                  <li class="coach-list-item">
+                    Złoty medal mistrzostw Europy 2014
+                  </li>
+                  <li class="coach-list-item">
+                    Złoty medal mistrzostw Europy 2014
+                  </li>
+                  <li class="coach-list-item">
+                    Złoty medal mistrzostw Europy 2014
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="card-box">
+            <h3 class="h3 coach-h3">Kadra Trenerska</h3>
+            <div class="card">
+              <h4 class="coach-name-h4">Trenr Karol</h4>
+              <div class="card__side card__side--img">
+                <img src="/img/Trener-Karol.jpg" alt="" class="card__img" />
+              </div>
+              <div class="card__side card__side--back">
+                <div class="card__details">
+                  <p class="card__details--text">
+                    <span>Karol Hołubowicz</span> <br />Doświadczony trener
+                    taekwondo olimpijskiego, znany z skutecznych metod
+                    szkoleniowych i pasji do rozwoju swoich podopiecznych. Jego
+                    determinacja i zaangażowanie.
+                  </p>
+                  <ul class="card__details--list">
+                    <li class="card__details--item">
+                      Złoty medal mistrzostw Europy 2014
+                    </li>
+                    <li class="card__details--item">
+                      Złoty medal mistrzostw Europy 2015
+                    </li>
+                    <li class="card__details--item">
+                      Złoty medal mistrzostw Europy 2015
+                    </li>
+                    <li class="card__details--item">
+                      Brąz mistrzostw Europy seniorów 2017
+                    </li>
+                    <li class="card__details--item">
+                      Złoty medal mistrzostw Świata 2017
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h4 class="h4 coach-name-h4">Trenr Karol</h4>
+              <div class="card__side card__side--img">
+                <img src="/img/Trener-Karol.jpg" alt="" class="card__img" />
+              </div>
+              <div class="card__side card__side--back">
+                <div class="card__details">
+                  <p class="card__details--text">
+                    <span>Karol Hołubowicz</span> to doświadczony trener
+                    taekwondo olimpijskiego, znany z skutecznych metod
+                    szkoleniowych i pasji do rozwoju swoich podopiecznych. Jego
+                    determinacja i zaangażowanie przynoszą im wybitne wyniki
+                    zarówno na arenie krajowej, jak i międzynarodowej.
+                  </p>
+                  <ul class="card__details--list">
+                    <li class="card__details--item">Osiągniecie</li>
+                    <li class="card__details--item">Osiągniecie</li>
+                    <li class="card__details--item">Osiągniecie</li>
+                    <li class="card__details--item">Osiągniecie</li>
+                    <li class="card__details--item">Osiągniecie</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h4 class="coach-name-h4">Trenr Karol</h4>
+              <div class="card__side card__side--img">
+                <img src="/img/Trener-Karol.jpg" alt="" class="card__img" />
+              </div>
+              <div class="card__side card__side--back">
+                <div class="card__details">
+                  <p class="card__details--text">
+                    <span>Karol Hołubowicz</span> to doświadczony trener
+                    taekwondo olimpijskiego, znany z skutecznych metod
+                    szkoleniowych i pasji do rozwoju swoich podopiecznych. Jego
+                    determinacja i zaangażowanie przynoszą im wybitne wyniki
+                    zarówno na arenie krajowej, jak i międzynarodowej.
+                  </p>
+                  <ul class="card__details--list">
+                    <li class="card__details--item">Osiągniecie</li>
+                    <li class="card__details--item">Osiągniecie</li>
+                    <li class="card__details--item">Osiągniecie</li>
+                    <li class="card__details--item">Osiągniecie</li>
+                    <li class="card__details--item">Osiągniecie</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-contact">
+          <h3 class="h3">Zapraszamy do kontaktu</h3>
+          <div class="form-box">
+            <form action="" class="form">
+              <label for="name" class="label">Imię</label>
+              <input
+                type="text"
+                placeholder="Podaj swoje imię"
+                id="name"
+                class="input"
+              />
+              <label for="email" class="label">Adres e-mail</label>
+              <input
+                type="text"
+                placeholder="jan@gmail.com"
+                id="email"
+                class="input"
+              />
+              <label for="text-content" class="label">Treść wiadomości</label>
+              <textarea
+                name=""
+                id="textcontent"
+                cols="55"
+                rows="14"
+                class="textArea"
+              ></textarea>
+
+              <button class="form-button">Wyślij</button>
+            </form>
+            <div id="map"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="left-side-footer">
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="#" class="link">O nas</a>
+            </li>
+
+            <li class="footer-list__item">
+              <a href="#" class="link">Grafik zajęć</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="#" class="link">Dokumenty</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="" class="link">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-side-footer">
+          <div class="footer-logo-box">
+            <img
+              src="/img/FULL_NAME_WHITE_NO_BG.png"
+              alt=""
+              class="footer-logo-img"
+            />
+          </div>
+          <div class="address-details-box">
+            <p class="addres">ul. 3 maja 27</p>
+            <p class="addres">05-120 Legionowo</p>
+            <p class="addres">tel. 123 123 123</p>
+            <p class="addres">adres.mailowy@gmail.com</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+.section-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(16, 20, 21, 0.8),
+      rgba(128, 109, 0, 0.5)
+    ),
+    url(/img/IMG_2099.JPG);
+    /* url(../img/medals.jpg!d); */
+
+  width: 100%;
+  min-height: 450px;
+  max-height: 625px;
+  /* border-radius: 3px; */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.5rem 2rem 0 hsla(0, 0%, 0%, 0.2);
+  transition: all 5s ease-in;
+}
+
+.h1-box {
+  position: absolute;
+  top: 15%;
+  padding: 0 12.8rem;
+  transition: all 0.3s;
+  animation: moveInLeft 1.2s ease 0s 1 normal forwards;
+}
+
+.text-box {
+  position: absolute;
+  top: 60%;
+  animation: moveInRight 1.2s ease 0s 1 normal forwards;
+}
+
+.seciont-text {
+  font-size: 1.8rem;
+  color: #cbcbcb;
+  font-weight: 400;
+}
+
+.carousel-box {
+  max-width: 100%;
+  background-image: rgba(16, 20, 21, 0.19);
+}
+
+.carousel-img {
+  width: 100%;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(2px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.partnersBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  min-width: 40%;
+  max-width: 100%;
+  margin-top: 4.8rem;
+  margin-bottom: 4.8rem;
+  transition: all 0.3;
+}
+
+.partner-logo-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.4rem;
+
+  list-style: none;
+  transition: all 0.3;
+}
+
+.partner-logo-item {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 1.2rem 2.4rem;
+  background-color: rgba(254, 254, 254, 0.8);
+  animation: moveInLeft 1.2s ease 0s 1 normal forwards;
+  box-shadow: 0 0.5rem 2rem 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.partner-logo {
+  width: 8.2rem;
+  height: 8.2rem;
+}
+
+.partner-text {
+  font-size: 2.4rem;
+  color: #101415;
+  font-weight: 700;
+}
